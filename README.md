@@ -115,7 +115,7 @@ density patches inside it.
 
 ## Tests
 
-`pytest` runs on every push. The tests build synthetic clouds with a known density, a known
+`pytest` runs on every push, on Python 3.10 and 3.12. The tests build synthetic clouds with a known density, a known
 400 m² void, a coordinate system in feet, an AOI that extends past the data, and noise
 classes, and check that the tool measures each one correctly.
 
