@@ -124,6 +124,12 @@ pip install -e ".[test]"
 pytest
 ```
 
+## See it on a web map
+
+[LiDAR Web Map](https://github.com/jjmmcckk/lidar-web-map) shows this tool's density grid and
+void polygons alongside the point cloud and terrain models in an interactive 3D map
+([live demo](https://jjmmcckk.github.io/lidar-web-map/)).
+
 ## Author
 
 Jordan McKenzie, Transport Canada Advanced RPAS Pilot and Flight Reviewer, B.Sc. Computer
