@@ -1,0 +1,114 @@
+{
+  "file": "autzen_trim.las",
+  "generated_utc": "2026-11-26 07:46",
+  "crs": "NAD_1983_HARN_Lambert_Conformal_Conic",
+  "horizontal_unit": "foot",
+  "point_count": 110000,
+  "z_range": [
+    406.26,
+    520.51
+  ],
+  "cell_size_m": 2.0,
+  "analysis_area": "examples/autzen_aoi.geojson",
+  "density_returns": "first",
+  "density_stats_pts_per_m2": {
+    "mean": 2.86,
+    "median": 3.0,
+    "p5": 0.0,
+    "p95": 4.0,
+    "cells": 5720,
+    "empty_cells": 294
+  },
+  "checks": [
+    {
+      "check": "Coordinate system defined",
+      "value": "NAD_1983_HARN_Lambert_Conformal_Conic",
+      "target": "present",
+      "pass": true
+    },
+    {
+      "check": "Cells meeting 2 pts/m\u00b2 (first returns)",
+      "value": "92.7%",
+      "target": "\u2265 95%",
+      "pass": false
+    },
+    {
+      "check": "Analysis area with any data",
+      "value": "94.9%",
+      "target": "100%",
+      "pass": false
+    },
+    {
+      "check": "Void and low density areas",
+      "value": "1,344 m\u00b2 in 8 polygons",
+      "target": "reported",
+      "pass": null
+    },
+    {
+      "check": "Classified (any class \u2265 2)",
+      "value": "yes",
+      "target": "yes",
+      "pass": true
+    },
+    {
+      "check": "Noise points (classes 7 and 18)",
+      "value": "0.00%",
+      "target": "\u2264 1%",
+      "pass": true
+    }
+  ],
+  "gaps": [
+    {
+      "area_m2": 1172.0,
+      "type": "void"
+    },
+    {
+      "area_m2": 44.0,
+      "type": "low density"
+    },
+    {
+      "area_m2": 32.0,
+      "type": "low density"
+    },
+    {
+      "area_m2": 24.0,
+      "type": "low density"
+    },
+    {
+      "area_m2": 24.0,
+      "type": "low density"
+    },
+    {
+      "area_m2": 16.0,
+      "type": "low density"
+    },
+    {
+      "area_m2": 16.0,
+      "type": "low density"
+    },
+    {
+      "area_m2": 16.0,
+      "type": "low density"
+    }
+  ],
+  "classes": [
+    {
+      "class": 1,
+      "name": "Unclassified",
+      "points": 83893,
+      "percent": 76.27
+    },
+    {
+      "class": 2,
+      "name": "Ground",
+      "points": 26107,
+      "percent": 23.73
+    }
+  ],
+  "returns": {
+    "1": 99257,
+    "2": 9021,
+    "3": 1623,
+    "4": 99
+  }
+}
